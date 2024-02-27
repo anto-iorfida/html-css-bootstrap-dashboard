@@ -1,7 +1,9 @@
-/* 
-*{
-    margin: 0;
-} */
+.ms-bg-darkblue{
+    background-color: #051e34;
+}
+.ms-bg-redd{
+    background-color: red;
+}
 
 header{
     height: 70px;
@@ -9,10 +11,16 @@ header{
 aside{
     width: 150px;
     height: calc(100vh - 70px );
-    background-color: rgb(210, 122, 6);
+    background-image: url(img/sidebar-bg.png);
+    
 }
 main{
     width: 100%;
     height: calc(100vh - 70px);
     background-color: blue;
+    overflow-y: auto;
+}
+
+ul{
+    list-style: none;
 }
