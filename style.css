@@ -55,7 +55,8 @@ ul{
         margin: 0 auto;
     }
     aside p{
-        display: none;
+        opacity: 0;
     }
+    
 
 }
