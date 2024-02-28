@@ -36,24 +36,153 @@
         <aside class="ms-bg-darkblue flex-column d-flex py-4 text-white">
             <div class="col-auto ">
                 <ul>
-                    <li class="d-flex align-items-baseline gap-2"><i class="fa-solid fa-house"></i><p>Home</p></li>
-                    <li class="d-flex align-items-baseline gap-2"><i class="fa-solid fa-chart-simple"></i><p>Stats</p></li>
-                    <li class="d-flex align-items-baseline gap-2"><i class="fa-solid fa-signal"></i><p>Signal</p></li>
+                    <li class="d-flex align-items-baseline gap-2"><div><i class="fa-solid fa-house"></i></div><p>Home</p></li>
+                    <li class="d-flex align-items-baseline gap-2"><div><i class="fa-solid fa-chart-simple"></i></div><p>Stats</p></li>
+                    <li class="d-flex align-items-baseline gap-2"><div><i class="fa-solid fa-signal"></i></div><p>Signal</p></li>
                 </ul>
             </div>
             <div class="col align-items-end d-flex justify-content-center gap-2 ">
-                <p><i class="fa-solid fa-gear"></i></p>
-                <p>Admin</p>
+                <div><i class="fa-solid fa-gear"></i></div>
+                <p class="m-0">Admin</p>
             </div>
         </aside>
 
         <main class="">
-            <div class="row">
-                <div class="col-12 bg-primary py-4">
+            <div class="row text-white">
+                <div class="col-12 bg-primary p-4">
+                   <div class="row"> 
+                        <div class=" col-auto order-md-3">
+                             <h6>Nuovo Studente</h6>
+                             <button type="button" class="btn btn-outline-light py-0 fs-3">+</button>
 
+                         </div>
+                        <div class="col order-md-1 ">
+                                 <div class="d-flex gap-3 ">
+                                      <h4 class="fs-3">Boolean</h4>
+                                       <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Piano blaze</p> </button>
+                                  </div>
+                                  <div class="d-flex gap-3">
+                                      <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">3 App</p> </button>
+                                      <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Boolean mobile app</p> </button>
+                                      <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Boolean web app</p> </button>
+                                      <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Boolean blog app</p> </button>
+
+                                  </div>
+                        </div>
+                         <div class=" col-auto order-md-2">
+                             <h6>Studenti online negli ultimi 30 minuti</h6>
+                             <p class="fs-2 fw-semibold">125</p>
+                         </div>
+                        
+                   </div>
                 </div>
-                <div></div>
             </div>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header fw-semibold fs-5">
+                              Prossime classi
+                            </div>
+                            <div class="row">
+                                <div class="col"><p>Nome</p></div>
+                                <div class="col-2 text-center d-none d-md-block"><p>Data inizio</p></div>
+                                <div class="col-1 text-center d-none d-md-block"><p>RDI</p></div>
+                                <div class="col-2 col-lg-1 text-center"><p>Stato</p></div>
+                                <div class="col-2 text-center"><p>Azioni</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""><p>Classe 75</p></div>
+                                <div class="col-2 text-center d-none d-md-block"><p>15Feb 2021</p></div>
+                                <div class="col-1 text-center d-none d-md-block"><p>20%</p></div>
+                                <div class="col-2 col-lg-1 text-center"><button class="btn btn-success py-0 px-1">Done</button>
+                                </div>
+                                <div class="col-2 text-center"><p>Azioni</p></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col my-2 card">
+                        <div class="card-header fw-semibold fs-5">
+                            F.A.Q.
+                          </div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  Come aggiungere un nuovo studente?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Come posso accedere alle informazoni del mio account?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Posso usare questa dashboard da mobile?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-4 ">
+                    <div class="col my-2">
+                        <div class="card">
+                            <div class="card-header fw-semibold fs-5">
+                              Todo
+                            </div>
+                            <ul class="list-group m-3">
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                  <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                </li>
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                  <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                                </li>
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                  <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                </li>
+                              </ul>
+                        <div>     
+                    </div>   
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card">
+                    <div class="card m-3">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <img class="img-fluid" src="img/stats.jpeg" alt="">
+                            <p>Utenti Attivi</p>
+                            <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                         </li>
+                          <li class="list-group-item">Gennaio: 1200</li>
+                          <li class="list-group-item">Febbraio: 800</li>
+                          <li class="list-group-item">Marzo: 1500</li>
+                          <li class="list-group-item"><a href="">Visualizza report approfondito</a></li>
+                        </ul>
+                      </div>
+                  </div>
+            </div>
+            
+            
         </main>
     </div>
 </body>

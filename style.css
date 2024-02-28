@@ -1,9 +1,28 @@
+/* ------------- 
+    STYLE
+ ------------- */
 .ms-bg-darkblue{
     background-color: #051e34;
+}
+.ms-bg-bluebtn{
+    background-color: #165bba;
+}
+.ms-bg-f{
+    background-color: fuchsia;
+}
+.ms-bg-m{
+    background-color: khaki;
+}
+.ms-bg-g{
+    background-color: green;
 }
 .ms-bg-redd{
     background-color: red;
 }
+
+/* ------------- 
+    GENERAL
+ ------------- */
 
 header{
     height: 70px;
@@ -23,4 +42,20 @@ main{
 
 ul{
     list-style: none;
+}
+
+  .custom-img {
+    width: 26px;
+    height: 26px;
+}
+
+@media screen and (max-width: 768px){
+    aside{
+        width: 80px ;
+        margin: 0 auto;
+    }
+    aside p{
+        display: none;
+    }
+
 }
