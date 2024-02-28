@@ -7,18 +7,7 @@
 .ms-bg-bluebtn{
     background-color: #165bba;
 }
-.ms-bg-f{
-    background-color: fuchsia;
-}
-.ms-bg-m{
-    background-color: khaki;
-}
-.ms-bg-g{
-    background-color: green;
-}
-.ms-bg-redd{
-    background-color: red;
-}
+
 
 /* ------------- 
     GENERAL
@@ -43,7 +32,6 @@ main{
 ul{
     list-style: none;
 }
-
   .custom-img {
     width: 26px;
     height: 26px;
@@ -55,8 +43,16 @@ ul{
         margin: 0 auto;
     }
     aside p{
-        opacity: 0;
+        display: none;
     }
-    
-
 }
+
+/* ------------- 
+    HOVER
+ ------------- */
+
+
+ aside li:hover{
+    opacity: 0.5;
+    background-color: rgba(255, 250, 255, 0.5);
+ }

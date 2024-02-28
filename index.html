@@ -16,7 +16,7 @@
     <header class="bg-light d-flex align-items-center gap-2 px-3">
       
             <div class="col-auto ">
-                <img class="d-md-none custom-img" src="img/mobile-logo.png" alt="">
+                <img class="d-md-none " height="40" src="img/mobile-logo.png" alt="">
                 <img class="d-none d-md-block" src="img/logo.svg" alt="logo">
                 
             </div>
@@ -26,54 +26,136 @@
                     <input type="text" class="form-control" placeholder="Prova a cercare : Lezioni di laravel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
               </div>
-            <div class="col-auto bg-white d-flex gap-3 ">
+            <div class="col-auto bg-white d-flex gap-3 align-items-baseline">
                 <i class="fa-solid fa-list-ul d-none d-md-block"></i>
                 <i class="fa-solid fa-circle-question d-none d-md-block"></i>
                 <i class="fa-solid fa-ellipsis-vertical d-none d-md-block"></i>
-                <i class="fa-solid fa-bell text-warning"></i>
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell text-warning"></i>
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                
             </div>
      
     </header>
-    <div class="container-fluid d-flex ">
+    <div class="d-flex ">
         <aside class="ms-bg-darkblue flex-column d-flex py-4 text-white">
-            <div class="col-auto ">
-                <ul>
-                    <li class="d-flex align-items-baseline gap-2"><div><i class="fa-solid fa-house"></i></div><p>Home</p></li>
-                    <li class="d-flex align-items-baseline gap-2"><div><i class="fa-solid fa-chart-simple"></i></div><p>Stats</p></li>
-                    <li class="d-flex align-items-baseline gap-2"><div><i class="fa-solid fa-signal"></i></div><p>Signal</p></li>
+            <div class="col-auto">
+                <ul class="p-2 ">
+                    <li class="d-flex align-items-baseline justify-content-center py-1 gap-2"><div><i class="fa-solid fa-house"></i></div><p>Home</p></li>
+                    <li class="d-flex align-items-baseline justify-content-center py-1 gap-2"><div><i class="fa-solid fa-chart-simple"></i></div><p>Stats</p></li>
+                    <li class="d-flex align-items-baseline justify-content-center py-1 gap-2"><div><i class="fa-solid fa-signal"></i></div><p>Signal</p></li>
                 </ul>
             </div>
-            <div class="col align-items-end d-flex  gap-2 ">
-                <ul class="">
+            <div class="col align-items-end justify-content-center d-flex  gap-2 ">
+                <ul class="p-0">
                     <li class="d-flex align-items-baseline gap-2 "><div><i class="fa-solid fa-gear"></i></div><p>Admin</p></li>
                 </ul>
             </div>
         </aside>
 
-        <main class="">
+        <main class="container-fluid">
             <div class="row text-white">
                 <div class="col-12 bg-primary p-4">
-                   <div class="row"> 
-                        <div class=" col-auto order-md-3">
+                   <div class="row d-block d-md-flex"> 
+                        <div class=" col-12 col-md-3 order-md-3 my-2 ">
                              <h6>Nuovo Studente</h6>
-                             <button type="button" class="btn btn-outline-light py-0 fs-3">+</button>
+                             <button type="button" class="btn btn-outline-light py-0 fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                      <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                      </div>
+                                      <div class="offcanvas-body">
+                                        <form class="row g-1">
+                                            <div class="col-6">
+                                                <label for="validationCustom01" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="validationCustom01" placeholder="Mario" required>
+                                                <div class="valid-feedback">
+                                                  Looks good!
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <label for="validationCustom02" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Rossi" required>
+                                                <div class="valid-feedback">
+                                                  Looks good!
+                                                </div>
+                                              </div>        
+                                            <div class="col-md-6">
+                                              <label for="inputEmail4" class="form-label">Email</label>
+                                              <input type="email" class="form-control" id="inputEmail4" placeholder="mariorossi@....com">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="inputPassword4" class="form-label">Password</label>
+                                              <input type="password" class="form-control" id="inputPassword4" placeholder="*********">
+                                            </div>
+                                            <div class="col-12">
+                                              <label for="inputAddress" class="form-label">Indirizzo</label>
+                                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                            </div>
+                                            <div class="col-12">
+                                              <label for="inputAddress2" class="form-label">Struttura</label>
+                                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="inputCity" class="form-label">Città</label>
+                                              <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                              <label for="inputState" class="form-label">Stato</label>
+                                              <select id="inputState" class="form-select">
+                                                <option selected>Choose...</option>
+                                                <option>...</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                              <label for="inputZip" class="form-label">CAP</label>
+                                              <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <label for="formFileSm" class="form-label">Carica il file</label>
+                                                <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                              </div>
+                                              
+                                                 <div class="col-12">
+                                                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                                  <label class="form-check-label" for="autoSizingCheck">
+                                                    Remember me
+                                                  </label>
+                                                </div>
+                                            <div class="col-12">
+                                              <button type="submit" class="btn btn-primary">Sign in</button>
+                                              <button type="button" class="btn btn-warning" id="clearBtn">Clear</button>
+                                            </div>
+                                          </form>
+                                      </div>
+                                    </div>
 
                          </div>
-                        <div class="col order-md-1 ">
-                                 <div class="d-flex gap-3 ">
+                        <div class=" col-12 col-md-6 order-md-1 my-2 ">
+                                 <div class="d-flex gap-3 align-items-center ">
                                       <h4 class="fs-3">Boolean</h4>
-                                       <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Piano blaze</p> </button>
+                                       <button class="btn btn-outline-light border-0 py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Piano blaze</p> </button>
                                   </div>
                                   <div class="d-flex gap-3">
-                                      <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">3 App</p> </button>
-                                      <span></span>
-                                      <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Boolean mobile app</p> </button>
-                                      <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Boolean web app</p> </button>
-                                      <button class="btn btn-success py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">Boolean blog app</p> </button>
+                                      <button class="btn btn-outline-light border-0 py-0 px-1 rounded-5 ms-bg-bluebtn  "><p class="p-0 m-0">3 App</p> </button>
+                                      <span><i class="fa-solid fa-angles-right"></i></span>
+                                      <button class="btn btn-outline-light border-0 py-0 px-1 rounded-5 ms-bg-bluebtn d-none d-lg-block "><p class="p-0 m-0">Boolean mobile app</p> </button>
+                                      <button class="btn btn-outline-light border-0 py-0 px-1 rounded-5 ms-bg-bluebtn d-none d-lg-block "><p class="p-0 m-0">Boolean web app</p> </button>
+                                      <button class="btn btn-outline-light border-0 py-0 px-1 rounded-5 ms-bg-bluebtn d-none d-lg-block "><p class="p-0 m-0">Boolean blog app</p> </button>
+                                      <button class="btn btn-outline-light border-0 py-0 px-1 rounded-5 ms-bg-bluebtn d-lg-none "><p class="p-0 m-0">+</p> </button>
 
                                   </div>
                         </div>
-                         <div class=" col-auto order-md-2">
+                         <div class="col-12 col-md-3 order-md-2 my-3">
                              <h6>Studenti online negli ultimi 30 minuti</h6>
                              <p class="fs-2 fw-semibold">125</p>
                          </div>
@@ -81,32 +163,85 @@
                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-8">
+            <div class="row py-3">
+                <div class="col-12 col-md-8 ">
                     <div class="col">
                         <div class="card">
                             <div class="card-header fw-semibold fs-5">
                               Prossime classi
                             </div>
-                            <div class="row">
-                                <div class="col"><p>Nome</p></div>
-                                <div class="col-2 text-center d-none d-md-block"><p>Data inizio</p></div>
-                                <div class="col-1 text-center d-none d-md-block"><p>RDI</p></div>
-                                <div class="col-2 col-lg-1 text-center"><p>Stato</p></div>
-                                <div class="col-2 text-center"><p>Azioni</p></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""><p>Classe 75</p></div>
-                                <div class="col-2 text-center d-none d-md-block"><p>15Feb 2021</p></div>
-                                <div class="col-1 text-center d-none d-md-block"><p>20%</p></div>
-                                <div class="col-2 col-lg-1 text-center"><button class="btn btn-success py-0 px-1">Done</button>
-                                </div>
-                                <div class="col-2 text-center"><p>Azioni</p></div>
-                            </div>
-                            
+                             <table  class="m-3" border="0" cellspacing="0" cellpadding="0">
+                                <thead>
+                                <tr class="border-bottom ">
+                                <th class="col-6 col-md-4 py-2">Nome</th>
+                                <th class="text-center d-none d-lg-table-cell py-2">Data inizio</th>
+                                <th class="text-center d-none d-lg-table-cell py-2">RDI</th>
+                                <th class="text-center py-2">Stato</th>
+                                <th class="text-center py-2">Azioni</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="border-bottom">
+                                <td class="text-center py-1"><div class="d-flex align-items-center gap-2"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""> <p class="m-0">Classe 75</p> </div></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>15Feb 2021</p></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>20%</p></td>
+                                <td class="text-center py-1"><button class="btn btn-success py-0 px-1">Done</button></td>
+                                <td class=" py-1"><div class="d-flex justify-content-center gap-2"><i class="fa-solid fa-pen border border-dark-subtle text-secondary p-2"></i><i class="fa-solid fa-trash border border-dark-subtle text-secondary p-2"></i></div></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                <td class="text-center py-1"><div class="d-flex align-items-center gap-2"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""> <p class="m-0">Classe 75</p> </div></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>15Feb 2021</p></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>20%</p></td>
+                                <td class="text-center py-1"><button class="btn btn-success py-0 px-1">Done</button></td>
+                                <td class=" py-1"><div class="d-flex justify-content-center gap-2"><i class="fa-solid fa-pen border border-dark-subtle text-secondary p-2"></i><i class="fa-solid fa-trash border border-dark-subtle text-secondary p-2"></i></div></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                <td class="text-center py-1"><div class="d-flex align-items-center gap-2"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""> <p class="m-0">Classe 75</p> </div></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>15Feb 2021</p></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>20%</p></td>
+                                <td class="text-center py-1"><button class="btn btn-warning py-0 px-1">Process</button></td>
+                                <td class=" py-1"><div class="d-flex justify-content-center gap-2"><i class="fa-solid fa-pen border border-dark-subtle text-secondary p-2"></i><i class="fa-solid fa-trash border border-dark-subtle text-secondary p-2"></i></div></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                <td class="text-center py-1"><div class="d-flex align-items-center gap-2"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""> <p class="m-0">Classe 75</p> </div></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>15Feb 2021</p></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>20%</p></td>
+                                <td class="text-center py-1"><button class="btn btn-success py-0 px-1">Done</button></td>
+                                <td class=" py-1"><div class="d-flex justify-content-center gap-2"><i class="fa-solid fa-pen border border-dark-subtle text-secondary p-2"></i><i class="fa-solid fa-trash border border-dark-subtle text-secondary p-2"></i></div></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                <td class="text-center py-1"><div class="d-flex align-items-center gap-2"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""> <p class="m-0">Classe 75</p> </div></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>15Feb 2021</p></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>20%</p></td>
+                                <td class="text-center py-1"><button class="btn btn-danger py-0 px-1">Failed</button></td>
+                                <td class=" py-1"><div class="d-flex justify-content-center gap-2"><i class="fa-solid fa-pen border border-dark-subtle text-secondary p-2"></i><i class="fa-solid fa-trash border border-dark-subtle text-secondary p-2"></i></div></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                <td class="text-center py-1"><div class="d-flex align-items-center gap-2"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""> <p class="m-0">Classe 75</p> </div></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>15Feb 2021</p></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>20%</p></td>
+                                <td class="text-center py-1"><button class="btn btn-success py-0 px-1">Done</button></td>
+                                <td class=" py-1"><div class="d-flex justify-content-center gap-2"><i class="fa-solid fa-pen border border-dark-subtle text-secondary p-2"></i><i class="fa-solid fa-trash border border-dark-subtle text-secondary p-2"></i></div></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                <td class="text-center py-1"><div class="d-flex align-items-center gap-2"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""> <p class="m-0">Classe 75</p> </div></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>15Feb 2021</p></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>20%</p></td>
+                                <td class="text-center py-1"><button class="btn btn-danger py-0 px-1">Failed</button></td>
+                                <td class=" py-1"><div class="d-flex justify-content-center gap-2"><i class="fa-solid fa-pen border border-dark-subtle text-secondary p-2"></i><i class="fa-solid fa-trash border border-dark-subtle text-secondary p-2"></i></div></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                <td class="text-center py-1"><div class="d-flex align-items-center gap-2"><img class="img-fluid custom-img" src="img/class-avatar.jpg" alt=""> <p class="m-0">Classe 75</p> </div></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>15Feb 2021</p></td>
+                                <td class="text-center py-1 d-none d-lg-table-cell"><p>20%</p></td>
+                                <td class="text-center py-1"><button class="btn btn-success py-0 px-1">Done</button></td>
+                                <td class=" py-1"><div class="d-flex justify-content-center gap-2"><i class="fa-solid fa-pen border border-dark-subtle text-secondary p-2"></i><i class="fa-solid fa-trash border border-dark-subtle text-secondary p-2"></i></div></td>
+                                </tr>
+                                </tbody>
+                                </table>
                         </div>
                     </div>
-                    <div class="col my-2 card">
+                    <div class="col my-4 card">
                         <div class="card-header fw-semibold fs-5">
                             F.A.Q.
                           </div>
@@ -145,7 +280,7 @@
                     </div>
                 </div>
                 <div class=" col-12 col-md-4 ">
-                    <div class="col my-2">
+                    <div class="col ">
                         <div class="card">
                             <div class="card-header fw-semibold fs-5">
                               Todo
@@ -167,26 +302,24 @@
                         <div>     
                     </div>   
                 </div>
-            </div>
-            <div class="col ">
-                <div class="card">
-                    <div class="card m-3">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <img class="img-fluid" src="img/stats.jpeg" alt="">
-                            <p>Utenti Attivi</p>
-                            <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                         </li>
-                          <li class="list-group-item">Gennaio: 1200</li>
-                          <li class="list-group-item">Febbraio: 800</li>
-                          <li class="list-group-item">Marzo: 1500</li>
-                          <li class="list-group-item"><a href="">Visualizza report approfondito</a></li>
-                        </ul>
+                <div class="col my-4">
+                    <div class="card">
+                        <div class="card m-3">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                <img class="img-fluid" src="img/stats.jpeg" alt="">
+                                <p>Utenti Attivi</p>
+                                <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                             </li>
+                              <li class="list-group-item">Gennaio: 1200</li>
+                              <li class="list-group-item">Febbraio: 800</li>
+                              <li class="list-group-item">Marzo: 1500</li>
+                              <li class="list-group-item"><a href="">Visualizza report approfondito</a></li>
+                            </ul>
+                          </div>
                       </div>
-                  </div>
+                </div>
             </div>
-            
-            
         </main>
     </div>
 </body>
