@@ -53,6 +53,7 @@ ul{
 
 
  aside li:hover{
-    opacity: 0.5;
+   
     background-color: rgba(255, 250, 255, 0.5);
+    border-radius: 30px;
  }
