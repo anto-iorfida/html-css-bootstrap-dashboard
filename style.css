@@ -25,7 +25,7 @@ aside{
 main{
     width: 100%;
     height: calc(100vh - 70px);
-    background-color: blue;
+    background-color: #f8f9fa;
     overflow-y: auto;
 }
 
@@ -47,6 +47,11 @@ ul{
     }
 }
 
+@media (min-width: 768px) {
+    .offcanvas-end {
+        width: 70%;
+    }
+}
 /* ------------- 
     HOVER
  ------------- */
@@ -56,4 +61,10 @@ ul{
    
     background-color: rgba(255, 250, 255, 0.5);
     border-radius: 30px;
+ }
+tr:hover:not(thead tr){
+    background-color: rgba(0, 0, 0, 0.1);
+}
+tr i:hover{
+    opacity: 0.5;
  }
