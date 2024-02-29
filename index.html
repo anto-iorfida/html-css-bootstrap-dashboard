@@ -13,20 +13,21 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="bg-light d-flex align-items-center gap-2 px-3">
+  <!-- ------------------HEADER WHIT 3 COL------------------- -->
+    <header class="bg-light d-flex align-items-center  px-3">
       
-            <div class="col-auto ">
+            <div class="col-auto p-2 bg-white">
                 <img class="d-md-none " height="40" src="img/mobile-logo.png" alt="">
                 <img class="d-none d-md-block" src="img/logo.svg" alt="logo">
                 
             </div>
-            <div class="col">
+            <div class="col bg-white">
                     <div class="input-group  ">
                     <span class="input-group-text border-0 bg-secondary-subtle" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <input type="text" class="form-control bg-secondary-subtle" placeholder="Prova a cercare : Lezioni di laravel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
               </div>
-            <div class="col-auto bg-white py-2 d-flex gap-3 align-items-baseline">
+            <div class="col-auto bg-white p-2 d-flex gap-3 align-items-baseline">
                 <i class="fa-solid fa-list-ul d-none d-md-block"></i>
                 <i class="fa-solid fa-circle-question d-none d-md-block"></i>
                 <i class="fa-solid fa-ellipsis-vertical d-none d-md-block"></i>
@@ -41,11 +42,12 @@
                       <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                   </div>
-                
             </div>
-     
     </header>
+    <!-- -----------------/HEADER WHITH 3 COL------------------- -->
+    <!-- ------------------CONTAINER WHITH ASIDE AND MAIN------------------- -->
     <div class="d-flex ">
+         <!-- ------------------ASIDE BAR------------------- -->
         <aside class="ms-bg-darkblue flex-column d-flex py-4 text-white">
             <div class="col-auto">
                 <ul class="p-2 ">
@@ -60,15 +62,18 @@
                 </ul>
             </div>
         </aside>
+        <!-- -----------------/ASIDE BAR------------------- -->
 
+        <!-- -----------------MAIN------------------- -->
         <main class="container-fluid">
+            <!-- ------------------HEADER MAIN------------------- -->
             <div class="row text-white">
                 <div class="col-12 bg-primary p-4">
                    <div class="row d-block d-md-flex"> 
                         <div class=" col-12 col-md-3 order-md-3 my-2 ">
                              <h6>Nuovo Studente</h6>
                              <button type="button" class="btn btn-outline-light py-0 fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                       <div class="offcanvas-header">
                                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -138,7 +143,6 @@
                                           </form>
                                       </div>
                                     </div>
-
                          </div>
                         <div class=" col-12 col-md-6 order-md-1 my-2 ">
                                  <div class="d-flex gap-3 align-items-center  ">
@@ -152,7 +156,6 @@
                                       <button class="btn btn-outline-light border-0 py-0 px-2 rounded-5 ms-bg-bluebtn d-none d-lg-block "><p class="p-0 m-0">Boolean web app</p> </button>
                                       <button class="btn btn-outline-light border-0 py-0 px-2 rounded-5 ms-bg-bluebtn d-none d-lg-block "><p class="p-0 m-0">Boolean blog app</p> </button>
                                       <button class="btn btn-outline-light border-0 py-0 px-2 rounded-5 ms-bg-bluebtn d-lg-none "><p class="p-0 m-0">+</p> </button>
-
                                   </div>
                         </div>
                          <div class="col-12 col-md-3 order-md-2 my-3">
@@ -163,9 +166,14 @@
                    </div>
                 </div>
             </div>
+            <!-- -----------------/HEADER MAIN------------------- -->
+
+            <!-- ------------------BODY MAIN------------------- -->
             <div class="row py-3">
+              <!-- ------------------CONTENITOR TWO CARD------------------- -->
                 <div class="col-12 col-lg-8 ">
                     <div class="col">
+                      <!-- ------------------CARD PROSSIME CLASSE------------------- -->
                         <div class="card">
                             <div class="card-header fw-semibold fs-5">
                               Prossime classi
@@ -241,6 +249,7 @@
                                 </table>
                         </div>
                     </div>
+                    <!-- ------------------CARD F.A.Q------------------- -->
                     <div class="col my-4 card">
                         <div class="card-header fw-semibold fs-5">
                             F.A.Q.
@@ -253,7 +262,7 @@
                                 </button>
                               </h2>
                               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                <div class="accordion-body">QUA BISOGNA SCRIVERE</div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -263,7 +272,7 @@
                                 </button>
                               </h2>
                               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                <div class="accordion-body">QUA BISOGNA SCRIVERE 1</div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -273,13 +282,15 @@
                                 </button>
                               </h2>
                               <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body">QUA BISOGNA CRIVERE 2</div>
                               </div>
                             </div>
                           </div>
                     </div>
                 </div>
+                <!-- ------------------CONTENITOR TWO CARD------------------- -->
                 <div class=" col-12 col-lg-4 ">
+                  <!-- ------------------CARD TODO------------------- -->
                     <div class="col ">
                         <div class="card">
                             <div class="card-header fw-semibold fs-5">
@@ -302,6 +313,7 @@
                         <div>     
                     </div>   
                 </div>
+                <!-- ------------------CARD GRAFIC------------------- -->
                 <div class="col my-4">
                     <div class="card">
                         <div class="card m-3">
@@ -322,6 +334,7 @@
             </div>
         </main>
     </div>
+     <!-- -----------------/CONTAINER WHITH ASIDE AND MAIN------------------- -->
 </body>
 <!-- JAVASCRIPT -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

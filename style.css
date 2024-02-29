@@ -37,7 +37,11 @@ ul{
     height: 26px;
 }
 
-@media screen and (max-width: 768px){
+#offcanvasRight {
+        width: 100%;
+    }
+
+@media screen and (max-width: 767px){
     aside{
         width: 80px ;
         margin: 0 auto;
@@ -45,11 +49,13 @@ ul{
     aside p{
         display: none;
     }
+    
 }
 
 @media (min-width: 768px) {
-    .offcanvas-end {
-        width: 70%;
+ 
+    #offcanvasRight {
+        width: 40vw; 
     }
 }
 /* ------------- 
